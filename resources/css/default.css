@@ -1,0 +1,601 @@
+﻿body {
+    height: 100%;
+	
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr {
+	border-color: black;
+}
+
+a {
+	color: #e5f4e3;
+}
+
+/* header and navigation positioning and styling */
+.headerGrid {
+  color: #e5f4e3;
+  background: #18314F;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 12fr 2fr 2fr 2fr 2fr 2fr;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+.nav-link {
+	color: #e5f4e3;
+	text-decoration: none;
+	font-size: 1.25em;
+}
+
+.siteLink {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.homeLink {
+	grid-column: 4;
+	grid-row: 1;
+}
+
+.aboutLink {
+	grid-column: 5;
+	grid-row: 1;
+}
+
+.projectsLink {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.skillsLink {
+	grid-column: 7;
+	grid-row: 1;
+}
+
+.contactLink {
+	grid-column: 8;
+	grid-row: 1;
+}
+
+.grid {
+  	display: grid;
+	grid-template-columns: [leftedge] 2fr [leftcontent] 2fr [mid] 1fr [rightcontent] 2fr [rightedge] 1fr;
+	grid-template-rows: [welcome] .35fr [abouthead] .25fr [aboutcontent] .4fr [projectshead] .25fr [projectscontent] .5fr [skillshead] .15fr [technical] .75fr [strengths] .35fr [footer] .25fr;
+	justify-items: stretch;
+}
+
+/* Landing Page */
+.welcomeBanner {
+	/* styling */
+	color: #e5f4e3;
+	font-size: 3em;
+	font-style: bold;
+	background-image: url(../images/enchantedlake.jpg);
+	background-position: center;
+	/* position */
+	display: grid;
+	grid-column: 1 / 6;
+	grid-row: 1;
+	justify-items: center;
+	align-items: center;
+}
+
+/* About Me Page */
+.aboutMeHeading {
+	/* styling */
+	background: #A1CCCC;
+	color: #e5f4e3;
+	font-size: 2em;
+	font-style: bold;
+	/* position */
+	grid-column: 1 / 6;
+	grid-row: 2;
+	padding: 1em;
+}
+
+.aboutMeContent {
+	color: #18314F;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	justify-items: center;
+	align-items: center;
+}
+
+.aboutPersonal {
+	grid-column: 1 / 3;
+	grid-row: 3;
+	justify-items: center;
+	align-items: center;
+	padding: 2em;
+}
+
+.aboutProfessional {
+	grid-column: 3 / 6;
+	grid-row: 3;
+	justify-items: center;
+	align-items: center;
+	padding: 2em;
+}
+
+.personalImageGrid {
+	grid-column: 1 / 6;
+	grid-row: 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	z-index: -1;
+}
+
+.mePic1 {
+	grid-column: 1;
+	grid-row: 1;
+	opacity: .35;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.mePic2 {
+	grid-column: 2;
+	grid-row: 1;
+	opacity: .35;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.mePic3 {
+	grid-column: 3;
+	grid-row: 1;
+	opacity: .35;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Projects Page */
+.projectsHeading {
+	/* styling */
+	background: #F4F2F3;
+	color: #e5f4e3;
+	font-size: 2em;
+	font-style: bold;
+	/* position */
+	grid-column: 1 / 6;
+	grid-row: 4;
+	justify-items: center;
+	align-items: center;
+	padding: 2em;
+}
+
+.personalProjects {
+	background-image: linear-gradient(#F4F2F3 , #a1cccc);
+	grid-column: 1 / 3;
+	grid-row: 5;
+	justify-items: center;
+	align-items: center;
+	padding: 2em;
+}
+
+.schoolProjects {
+	background-image: linear-gradient(#F4F2F3 , #a1cccc);
+	grid-column: 3 / 6;
+	grid-row: 5;
+	justify-items: center;
+	align-items: center;
+	padding: 2em;
+}
+
+.projGrid {
+	grid-column: 1 / 3;
+	grid-row: 5; 
+	display: grid;
+	grid-template-columns: .00001fr 1.5fr 3fr .5fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	justify-items: center;
+	grid-row-gap: 1em;
+}
+
+.projectName {
+	color: #18314F;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+.persProj1 {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.persProj1name {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.persProj2 {
+	grid-column: 3;
+	grid-row: 2;
+}
+
+.persProj2name {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.persProj3 {
+	grid-column: 3;
+	grid-row: 3;
+}
+
+.persProj3name {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.schoolProj1 {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.schoolProj1name {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+
+.schoolProj2 {
+	grid-column: 3;
+	grid-row: 2;
+}
+
+.schoolProj2name {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.schoolProj3 {
+	grid-column: 3;
+	grid-row: 3;
+}
+
+.schoolProj3name {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+/* Skills and Experience Page */
+
+.experienceHeading {
+	/* styling */
+	background: #A1CCCC;
+	color: #e5f4e3;
+	font-size: 2em;
+	font-style: bold;
+	/* position */
+	grid-column: 1 / 6;
+	grid-row: 6;
+	justify-items: center;
+	align-items: center;
+	padding: 2em;
+}
+
+.employment {
+	background-image: linear-gradient(#a1cccc , #84bcda);
+	grid-column: 1 / 6;
+	grid-row: 7;
+	padding: 1.5em;
+}
+
+.employmentGrid {
+	grid-column: 1 / 4;
+	grid-row: 7;
+	display: grid;
+	grid-template-columns: 7fr 2.5fr 5fr;
+	grid-template-rows: .5fr 2fr .5fr 2fr .5fr 1.5fr .5fr 2fr;
+	padding: 1.5em;
+}
+
+.textOutline {
+	text-shadow:
+	-1px -1px 0 #000,  
+	 1px -1px 0 #000,
+	 -1px 1px 0 #000,
+	  1px 1px 0 #000;
+}
+
+.jobDescription {
+	color: #18314f;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	justify-items: center;
+	align-items: center;
+	text-align: left;
+	grid-column: 1 / 3;
+}
+
+.job1 {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.date1 {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.description1 {
+	grid-row: 2;
+}
+
+.job2 {
+	grid-row: 3;
+}
+
+.date2 {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.description2 {
+	grid-row: 4;
+}
+
+.job3 {
+	grid-column: 1;
+	grid-row: 5;
+}
+
+.date3 {
+	grid-column: 2;
+	grid-row: 5;
+}
+
+.description3 {
+	grid-row: 6;
+}
+
+.job4 {
+	grid-column: 1;
+	grid-row: 7;
+}
+
+.date4 {
+	grid-column: 2;
+	grid-row: 7;
+}
+
+.description4 {
+	grid-row: 8;
+}
+
+.resumeContent {
+	font-size: 1.5em;
+	color: #e5f4e3;
+}
+
+.technical {
+	margin: 1em;
+	grid-column: 4 / 6;
+	grid-row: 7;
+	padding: 1.5em;
+}
+
+.skillsGrid {
+	grid-column: 4 / 6;
+	grid-row: 7;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: .7fr 2fr .7fr 2fr .7fr 2fr .7fr 2fr 1fr;
+	padding-left: 2.5em;
+	justify-items: center;
+	align-items: center;
+}
+
+.skills {
+	color: #18314f;
+	font-size: 1.6em;
+	line-height: 1.5em;
+}
+
+.category1 {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.skills1 {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.category2 {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+.skills2 {
+	grid-column: 1;
+	grid-row: 4;
+}
+
+.category3 {
+	grid-column: 1;
+	grid-row: 5;
+}
+
+.skills3 {
+	grid-column: 1;
+	grid-row: 6;
+}
+
+.skills4 {
+	grid-column: 1;
+	grid-row: 8;
+}
+
+.coursesHeading {
+	grid-column: 1;
+	grid-row: 7;
+}
+
+.strengths {
+	grid-column: 1 / 3;
+	grid-row: 8;
+	justify-items: center;
+	align-items: center;
+	padding: 2em;
+	background-image: linear-gradient(#84bcda , #18314F);
+}
+
+.weaknesses {
+	grid-column: 3 / 7;
+	grid-row: 8;
+	justify-items: center;
+	align-items: center;
+	padding: 2em;
+	background-image: linear-gradient(#84bcda , #18314f);
+}
+
+.footer {
+	color: #e5f4e3;
+	background: #18314F;
+	padding: 2em;
+	grid-column: 1/span 5;
+	grid-row: 9;
+}
+
+.footerHeading {
+	color: #e5f4e3;
+	font-size: 2em;
+	font-style: bold;
+}
+
+.footerContent {
+	text-align: center;
+	display: block;
+	margin: auto;
+	font-size: 1.1em;
+	color: #e5f4e3;
+}
+
+/* Project Page */
+
+.projectPageGrid {
+	width: 100%;
+	background-image: linear-gradient(#a1cccc , #84bcda);
+	overflow: hidden;
+	display: grid;
+	grid-template-areas: "projectTitle projectTitle projectTitle"
+						"projectOverview projectOverview projectOverview"
+						"projectRole topLeftPhoto topRightPhoto"
+						"projectRole bottomLeftPhoto bottomRightPhoto"
+						"skillsGained skillsGained skillsGained";
+	grid-gap: 1em;
+}
+
+.pageHeading {
+	color: #e5f4e3;
+	font-size: 2em;
+	font-style: bold;
+}
+
+.subheading {
+	color: #18314F;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	justify-items: center;
+	align-items: center;
+}
+
+.projectTitle {
+	grid-area: projectTitle;
+	padding-left: 1em;
+}
+
+.projectOverview {
+	grid-area: projectOverview;
+	padding-left: .5em;
+}
+
+.projectRole {
+	grid-area: projectRole;
+	padding: .5em;
+}
+
+.skillsGained {
+	grid-area: skillsGained;
+	padding: .5em;
+}
+
+.topLeftPhoto {
+	grid-area: topLeftPhoto;
+}
+
+.topRightPhoto {
+	grid-area: topRightPhoto;
+	padding-right: .5em;
+}
+
+.bottomLeftPhoto {
+	grid-area: bottomLeftPhoto;
+}
+
+.bottomRightPhoto {
+	grid-area: bottomRightPhoto;
+	padding-right: .5em;
+}
+
+.containedImage {
+	overflow: hidden;
+	object-fit: contain;
+}
+
+.containedImage img {
+	width: 100%;
+}
+
+/* General classes */
+
+.bordered {
+	border-style: solid;
+	padding: auto;  
+	margin: auto;
+	width: 250px;
+}
+
+.sectionHeading {
+	color: #E5F4E3;
+	font-size: 1.8em;
+}
+
+.headingContent {
+	color: #18314F;
+	line-height: 1.8em;
+}
+
+.topicHeading {
+	color: #18314F;
+	font-size: 1.8em;
+	justify-items: center;
+}
+
+.bodyContent {
+	color: #E5F4E3;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	justify-items: center;
+	align-items: center;
+}
+
+/* Formatting Classes */
+
+.centerText {
+	text-align: center;
+}
+
