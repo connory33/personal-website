@@ -3,106 +3,121 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="/resources/css/default.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/default.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
   </head>
   <body>
 
-    <div class="headerGrid">
-        <a class="siteLink nav-link" href="#home">connoryoung.com</a>
-        <a class="homeLink nav-link" href="#home">Home</a>
-        <a class="aboutLink nav-link" href="#aboutMe">About Me</a>
-        <a class="projectsLink nav-link" href="#projects">Projects</a>
-        <a class="skillsLink nav-link" href="#experience">Experience</a>
-        <a class="contactLink nav-link" href="#contact">Contact</a>
-    </div>
-    
-    <div class="grid">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <a class="navbar-brand" href="#home">
+          <img src="resources/images/Artboard 1.png" width="150" height="150">
+        </a>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#home">Home</a>
+          <a class="nav-item nav-link" href="#aboutMe">About Me</a>
+          <a class="nav-item nav-link" href="#projects">Projects</a>
+          <a class="nav-item nav-link" href="#experience">Experience</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+        </div>
+    </nav>
   
       <!--Landing Page-->
       <a name="home"></a>
-      <div class="welcomeBanner">
-        <h1>Welcome</h1>
+      <div class="container-fluid welcomeBanner">
+        <br><br><br>
+        <h1 class="text-center">Connor Young</h1>
+        <h5 class="text-center">Student. Engineer. Entrepreneur.</h5>
+        <br><br><br>
       </div>
         
       <!--About Me Page-->
       <a name="aboutMe"></a>
-      <div class="aboutMeHeading">
+      <div class="container-fluid aboutMeHeading">
         <h2 class="sectionHeading">About Me</h2>
         <p class="headingContent">My name is Connor Young and I'm a rising senior at Cornell University in the College of Engineering. Check out the sections below to learn a little bit about me as a person and my aspirations for my career. Thanks for visiting!</p>
+        <hr> 
       </div>
 
-      <div class="aboutPersonal">
-        <h4 class="topicHeading" style="text-align: center">PERSONAL</h4>
-        <p class="aboutMeContent">When I'm not in the classroom or doing independent work, I stay pretty busy playing Sprint Football and club lacrosse for Cornell. In my free time, I like watching sports (especially hockey), playing video games, or doing something outdoors like skiing or fly fishing.</p>
+      <div class="container-fluid" id="aboutMeContentSection">
+        <div class="row">
+          <div class="col aboutPersonal">
+            <h4 class="topicHeading textCenter">PERSONAL</h4>
+            <p class="aboutMeContent">When I'm not in the classroom or doing independent work, I stay pretty busy playing Sprint Football and club lacrosse for Cornell. In my free time, I like watching sports (especially hockey), playing video games, or doing something outdoors like skiing or fly fishing.</p>
+          </div>
+          <div class="col aboutProfessional">
+            <h4 class="topicHeading textCenter">PROFESSIONAL</h4>
+            <p class="aboutMeContent">I'm majoring in Mechanical Engineering with a minor in Business. For now, I'm looking for an experience where I can combine my backgrounds in engineering and business to help a small, early-stage company develop and bring an innovative physical product to market. I like to analyze processes and physical systems and design and optimize them to best meet a set of goals. I also love to move quickly and work in active and hands-on environments. My passion lies in the automotive and aerospace industries, particularly electric and autonomous cars and space exploration.</p>
+          </div>
+        </div>
       </div>
-
-      <div class="aboutProfessional">
-        <h4 class="topicHeading" style="text-align: center">PROFESSIONAL</h4>
-        <p class="aboutMeContent">I'm majoring in Mechanical Engineering with a minor in Business. For now, I'm looking for an experience where I can combine my backgrounds in engineering and business to help a small, early-stage company develop and bring an innovative physical product to market. I like to analyze processes and physical systems and design and optimize them to best meet a set of goals. I also love to move quickly and work in active and hands-on environments. My passion lies in the automotive and aerospace industries, particularly electric and autonomous cars and space exploration.</p>
-      </div>
-
+<!--
       <div class="personalImageGrid">
         <img class="mePic2" src="resources/images/football.JPG">
         <img class="mePic1" src="resources/images/hockey.jpg">
         <img class="mePic3" src="resources/images/skiphoto.JPG">
-      </div>
+      </div>-->
 
 
       <!--Projects Page-->
-      <a name="projects"></a>
-      <div class="projectsHeading">
+      <a name="#projects"></a>
+      <div class="container-fluid projectsHeading">
         <h2 class="sectionHeading" style="color:#18314f">PROJECTS</h2>
         <p class="headingContent">Although I stay plenty busy with school projects, I also love delving into new fields and topics that interest me on my own time. Check some of my work from both categories below! Click on the project title or picture to learn more.</p>
         <hr>
       </div>
 
-      <div class="schoolProjects">
-          <h4 class="topicHeading" style="text-align: center">SCHOOL</h4>
-            <div class="projGrid">
-              <div class="schoolProj1 containedImage">
-                <img src="resources/images/robot.JPG">
-              </div>
-              <div class="schoolProj1name">
-                <p class="projectName">Autonomous<br>Robot</p>
-              </div>
-              <div class="schoolProj2 containedImage">
-                <img src="resources/images/WP1.jpeg">
-              </div>
-              <div class="schoolProj2name">
-                <p class="projectName">Water<br>Pump</p>
-              </div>
-              <div class="schoolProj3 containedImage">
-                <img src="resources/images/monttremblant.JPG">
-              </div>
-              <div class="schoolProj3name">
-                <p class="projectName">Thermistor<br>Cleaner</p>
-              </div>
-            </div>
-      </div>
-
-      <div class="personalProjects">
-        <h4 class="topicHeading" style="text-align: center">PERSONAL</h4>
-          <div class="projGrid">
-            <div class="persProj1 containedImage">
-              <img src="resources/images/personalwebsite.JPG">
-            </div>
-            <div class="persProj1name">
-              <p class="projectName">Personal<br>Website</p>
-            </div>
-            <div class="persProj2 containedImage">
-              <img src="resources/images/miata.jpg">
-            </div>
-            <div class="persProj2name">
-              <p class="projectName">Miata<br>Repair</p>
-            </div>
-            <div class="persProj3 containedImage">
-              <img src="resources/images/planterboxes.jpg">
-            </div>
-            <div class="persProj3name">
-              <p class="projectName">Planter<br>Boxes</p>
-            </div>
+      <div class="container-fluid" id="projectsArray">
+        <div class="row">
+          <div class="col align-self-center">
+            <img class="img-fluid" src="resources/images/robot.JPG">
           </div>
+          <div class="col align-self-center">
+            <img class="img-fluid" src="resources/images/WP1.jpeg">
+          </div>
+          <div class="col align-self-center">
+              <img class="img-fluid" src="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col align-self-start">
+            <p class="projectName">Autonomous Robot</p>
+          </div>
+          <div class="col align-self-start">
+            <p class="projectName">Water Pump</p>
+          </div>
+          <div class="col align-self-start">
+            <p class="projectName">Thermistor Cleaner</p>
+          </div>
+        </div>
+      
+
+        <div class="row">
+          <div class="col align-self-center">
+            <img class="img-fluid" src="resources/images/personalwebsite.JPG">
+          </div>
+          <div class="col align-self-center">
+            <img class="img-fluid" src="resources/images/miata.jpg">
+          </div>
+          <div class="col align-self-center">
+              <img class="img-fluid" src="resources/images/planterboxes.jpg">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col align-self-start">
+            <p class="projectName">Personal Website</p>
+          </div>
+          <div class="col align-self-start">
+            <p class="projectName">Miata Restoration</p>
+          </div>
+          <div class="col align-self-start">
+            <p class="projectName">Planter Boxes</p>
+          </div>
+        </div>
+
       </div>
+          
 
       <!--Skills and Experience Page-->
       <a name="experience"></a>
@@ -113,40 +128,64 @@
       </div>
 
       <div class="employment">
-        <h4 class="topicHeading" style="text-align: left">EMPLOYMENT HISTORY</h4>
-        <div class="employmentGrid">
-          <h4 class="resumeContent job1 textOutline">Operations Engineer - Appa Life Co.</h4>
-          <h4 class="resumeContent date1 textOutline">Summer 2019</h4>
-          <p class="jobDescription description1">-Led conception and development of blockchain supply-chain tracking program<br>-Built and deployed company ecommerce website with WordPress and WooCommerce<br>-Oversaw organization of manufacturing facility and process, including choosing, ordering, and installing thousands of dollars of ULine equipment<br>-12+ hours a week operating manufacturing line and tending to 3 acre farm<br>-Miscellaneous customer relations, fundraising work, and graphic design</p>
-          <h4 class="resumeContent job2 textOutline">Mechanical Engineering Intern - NVIDIA</h4>
-          <h4 class="resumeContent date2 textOutline">Summer 2018</h4>
-          <p class="jobDescription description2">-Determined important mechanical design and material choices for a major unannounced product<br>-Performed extensive CAD with Creo utilizing DFM techniques and COMSOL FEA analysis<br>-Selected and negotiated with vendors for material acquisition and evaluation<br>-Coordinated with a team of electrical and mechanical engineers to ensure optimal integration</p>
-          <h4 class="resumeContent job3 textOutline">Camp Counselor - Boy Scouts of America</h4>
-          <h4 class="resumeContent date3 textOutline">Summer 2017</h4>
-          <p class="jobDescription description3">-fill</p>
-          <h4 class="resumeContent job4 textOutline">Intern - Skycatch Inc.</h4>
-          <h4 class="resumeContent date4 textOutline">Summer 2015</h4>
-          <p class="jobDescription description4">-Only high school intern for this commercial drone data analytics and mapping company<br>-Processed image data into 3D models, wrote instruction manuals, and assisted commercial pilot training</p>
+        <h4 class="topicHeading">EMPLOYMENT HISTORY</h4>
+
+        <div class="row">
+          <div class="col">
+            <h4 class="resumeContent textOutline">Operations Engineer - Appa Life Co.</h4>
+          </div>
+          <div class="col">
+            <h4 class="resumeContent textOutline text-right">Summer 2019</h4>
+          </div>
         </div>
+        <p class="jobDescription">-Led conception and development of blockchain supply-chain tracking program<br>-Built and deployed company ecommerce website with WordPress and WooCommerce<br>-Oversaw organization of manufacturing facility and process, including choosing, ordering, and installing thousands of dollars of ULine equipment<br>-12+ hours a week operating manufacturing line and tending to 3 acre farm<br>-Miscellaneous customer relations, fundraising work, and graphic design</p>
+
+        <div class="row">
+            <div class="col">
+              <h4 class="resumeContent textOutline">Mechanical Engineering Intern - NVIDIA</h4>
+            </div>
+            <div class="col">
+              <h4 class="resumeContent textOutline text-right">Summer 2018</h4>
+            </div>
+        </div>
+        <p class="jobDescription">-Determined important mechanical design and material choices for a major unannounced product<br>-Performed extensive CAD with Creo utilizing DFM techniques and COMSOL FEA analysis<br>-Selected and negotiated with vendors for material acquisition and evaluation<br>-Coordinated with a team of electrical and mechanical engineers to ensure optimal integration</p>
+
+        <div class="row">
+          <div class="col">
+            <h4 class="resumeContent textOutline">Camp Counselor - Boy Scouts of America</h4>
+          </div>
+          <div class="col">
+            <h4 class="resumeContent textOutline text-right">Summer 2017</h4>
+          </div>
+        </div>
+        <p class="jobDescription">Supervised Cub Scouts, ages 7-10, in day camp. Guided Scouts through crafts, team sports, archery, and other activities for enjoyment and merit badge advancement.</p>
+
+        <div class="row">
+            <div class="col">
+              <h4 class="resumeContent textOutline">Intern - Skycatch Inc.</h4>
+            </div>
+            <div class="col">
+              <h4 class="resumeContent textOutline text-right">Summer 2015</h4>
+            </div>
+        </div>
+        <p class="jobDescription">-Only high school intern for this commercial drone data analytics and mapping company<br>-Processed image data into 3D models, wrote instruction manuals, and assisted commercial pilot training</p>
+
         <br><br><br><br>
-        <hr style="border-color:#18314f">
       </div>
 
-      <div class="technical">
-        <h4 class="topicHeading" style="text-align: center">TECHNICAL SKILLS</h4>
-        <div class="skillsGrid" style="border-left-style: solid; border-color: #18314f;">
-          <h4 class="resumeContent category1 textOutline">Fluent</h4>
-          <p class=" skills skills1 textCenter">MATLAB, Creo Parametric, Python, AutoCAD, Fusion360, Microsoft Office, HTML5, CSS</p>
-          <h4 class="resumeContent category2 textOutline">Capable</h4>
-          <p class="skills skills2 textCenter">ANSYS and COMSOL Sim Tools, Rapid Prototyping, DFM, Arduino, C, Bootstrap, Adobe CC (Illustrator, XD, Photoshop), WordPress, WooCommerce</p>
-          <h4 class="resumeContent category3 textOutline">Learning</h4>
-          <p class="skills skills3 textCenter">Java, JavaScript, React, Git, Ruby</p>
-          <h4 class="resumeContent textOutline coursesHeading textCenter">Technical Courses</h4>
-          <p class="skills skills4 textCenter">MATLAB, Thermodynamics, Statics, Dynamics, Mechanics of Materials, Mechanical Synthesis, Fluid Mechanics, Mechatronics, System Dynamics, Structural Mechanics, Heat Transfer</p>
+      <div class="technical container-fluid">
+        <h4 class="topicHeading text-center">TECHNICAL SKILLS</h4>
+        <div>
+          <h4 class="resumeContent text-center textOutline">Fluent</h4>
+          <p class=" skills text-center">MATLAB, Creo Parametric, Python, AutoCAD, Fusion360, Microsoft Office, HTML5, CSS</p>
+          <h4 class="resumeContent text-center textOutline">Capable</h4>
+          <p class="skills text-center">ANSYS and COMSOL Sim Tools, Rapid Prototyping, DFM, Arduino, C, Bootstrap, Adobe CC (Illustrator, XD, Photoshop), WordPress, WooCommerce</p>
+          <h4 class="resumeContent text-center textOutline">Learning</h4>
+          <p class="skills text-center">Java, JavaScript, React, Git, Ruby</p>
+          <h4 class="resumeContent textOutline coursesHeading text-center">Technical Courses</h4>
+          <p class="skills text-center">MATLAB, Thermodynamics, Statics, Dynamics, Mechanics of Materials, Mechanical Synthesis, Fluid Mechanics, Mechatronics, System Dynamics, Structural Mechanics, Heat Transfer</p>
         </div>
       </div>
-
-      <hr>
 
       <div class="strengths">
         <h4 class="topicHeading textCenter">STRENGTHS</h4>
@@ -193,11 +232,9 @@
         <h2 class="sectionHeading">Contact Me</h2>
         <p class="footerContent">I'm always looking for exciting new people and opportunities.</p>
         <br>
-        <a class="footerContent" href="https://www.linkedin.com/in/connoryoung33/">LinkedIn</a>
+        <a style="color: dodgerblue" class="footerContent" href="https://www.linkedin.com/in/connoryoung33/">LinkedIn</a>
         <p class="footerContent">connor@connoryoung.com</p>
       </div>  
-
-    </div>
     
 
   </body>	  
