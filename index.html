@@ -5,237 +5,329 @@
 
     <link rel="stylesheet" type="text/css" href="resources/css/default.css">
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap-grid.min.css">
+    
   </head>
   <body>
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <a class="navbar-brand" href="#home">
-          <img src="resources/images/Artboard 1.png" width="150" height="150">
-        </a>
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#home">Home</a>
-          <a class="nav-item nav-link" href="#aboutMe">About Me</a>
-          <a class="nav-item nav-link" href="#projects">Projects</a>
-          <a class="nav-item nav-link" href="#experience">Experience</a>
-          <a class="nav-item nav-link" href="#contact">Contact</a>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-toggleable">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand py-0" href="#home">
+        <img src="resources/images/Artboard 1.png" width="100" height="100">
+      </a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <div class="navbar-nav align-items-end">
+          <a class="nav-item nav-link" style="color:#e5f4e3" href="#home">Home</a>
+          <a class="nav-item nav-link" style="color:#e5f4e3" href="#aboutMe">About Me</a>
+          <a class="nav-item nav-link" style="color:#e5f4e3" href="#projects">Projects</a>
+          <a class="nav-item nav-link" style="color:#e5f4e3" href="#experience">Experience</a>
+          <a class="nav-item nav-link" style="color:#e5f4e3" href="#contact">Contact</a>
         </div>
+      </div>
     </nav>
-  
+    
+
       <!--Landing Page-->
       <a name="home"></a>
-      <div class="container-fluid welcomeBanner">
+      <div class="container-fluid welcomeBanner parallaxBanner">
         <br><br><br>
         <h1 class="text-center">Connor Young</h1>
         <h5 class="text-center">Student. Engineer. Entrepreneur.</h5>
         <br><br><br>
       </div>
-        
+
+      <div class="container-fluid" id="fullPageDiv">
+    
       <!--About Me Page-->
       <a name="aboutMe"></a>
-      <div class="container-fluid aboutMeHeading">
+      <div class="container">
         <h2 class="sectionHeading">About Me</h2>
         <p class="headingContent">My name is Connor Young and I'm a rising senior at Cornell University in the College of Engineering. Check out the sections below to learn a little bit about me as a person and my aspirations for my career. Thanks for visiting!</p>
         <hr> 
       </div>
 
-      <div class="container-fluid" id="aboutMeContentSection">
+      <div class="container">
         <div class="row">
           <div class="col aboutPersonal">
-            <h4 class="topicHeading textCenter">PERSONAL</h4>
+            <h4 class="topicHeading text-center">PERSONAL</h4>
             <p class="aboutMeContent">When I'm not in the classroom or doing independent work, I stay pretty busy playing Sprint Football and club lacrosse for Cornell. In my free time, I like watching sports (especially hockey), playing video games, or doing something outdoors like skiing or fly fishing.</p>
           </div>
           <div class="col aboutProfessional">
-            <h4 class="topicHeading textCenter">PROFESSIONAL</h4>
+            <h4 class="topicHeading text-center">PROFESSIONAL</h4>
             <p class="aboutMeContent">I'm majoring in Mechanical Engineering with a minor in Business. For now, I'm looking for an experience where I can combine my backgrounds in engineering and business to help a small, early-stage company develop and bring an innovative physical product to market. I like to analyze processes and physical systems and design and optimize them to best meet a set of goals. I also love to move quickly and work in active and hands-on environments. My passion lies in the automotive and aerospace industries, particularly electric and autonomous cars and space exploration.</p>
           </div>
         </div>
       </div>
-<!--
-      <div class="personalImageGrid">
-        <img class="mePic2" src="resources/images/football.JPG">
-        <img class="mePic1" src="resources/images/hockey.jpg">
-        <img class="mePic3" src="resources/images/skiphoto.JPG">
-      </div>-->
 
+      <hr>
 
       <!--Projects Page-->
       <a name="#projects"></a>
-      <div class="container-fluid projectsHeading">
-        <h2 class="sectionHeading" style="color:#18314f">PROJECTS</h2>
-        <p class="headingContent">Although I stay plenty busy with school projects, I also love delving into new fields and topics that interest me on my own time. Check some of my work from both categories below! Click on the project title or picture to learn more.</p>
-        <hr>
+      <div class="container">
+        <h2 class="sectionHeading">PROJECTS</h2>
+        <p class="headingContent">Although I stay plenty busy with school projects, I also love delving into new fields and topics that interest me on my own time. Check some of my work from both categories below!</p>
       </div>
 
-      <div class="container-fluid" id="projectsArray">
-        <div class="row">
-          <div class="col align-self-center">
-            <img class="img-fluid" src="resources/images/robot.JPG">
-          </div>
-          <div class="col align-self-center">
-            <img class="img-fluid" src="resources/images/WP1.jpeg">
-          </div>
-          <div class="col align-self-center">
-              <img class="img-fluid" src="">
-          </div>
+      <div class="container" style="margin-top: 2em">
+        <div class="card-columns">
+            <div class="card bg-dark text-white text-center">
+              <img class="card-img projectPhotoOverlay" src="resources/images/black.jpg">
+              <img class="card-img" src="resources/images/robot.JPG">
+              <div class="card-img-overlay">
+                <h5 class="card-title projectSplashTitle">Autonomous Robot</h5>
+                <a href="autonomousRobot.html" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="card bg-dark text-white text-center">
+              <img class="card-img projectPhotoOverlay" src="resources/images/black.jpg">
+              <img class="card-img" src="resources/images/WP1.jpeg">
+              <div class="card-img-overlay">
+                  <h5 class="card-title projectSplashTitle">Water Pump</h5>
+                  <a href="waterPump.html" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="card bg-dark text-white text-center">
+              <img class="card-img projectPhotoOverlay" src="resources/images/black.jpg">
+              <img class="card-img" src="resources/images/farm.jpg">
+              <div class="card-img-overlay">
+                <h5 class="card-title projectSplashTitle">Coming Soon</h5>
+                <a href="#" class="btn btn-primary">NA</a>
+              </div>
+            </div>
+            <div class="card bg-dark text-white text-center">
+              <img class="card-img projectPhotoOverlay" src="resources/images/black.jpg">
+              <img class="card-img" src="resources/images/miata.jpg">
+              <div class="card-img-overlay">
+                <h5 class="card-title projectSplashTitle">Miata Restoration</h5>
+                <a href="miataRestoration.html" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="card bg-dark text-white text-center">
+              <img class="card-img projectPhotoOverlay" src="resources/images/black.jpg">
+              <img class="card-img" src="resources/images/personalwebsite.JPG">
+              <div class="card-img-overlay">
+                <h5 class="card-title projectSplashTitle">Personal Website</h5>
+                <a href="personalWebsite.html" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="card bg-dark text-white text-center">
+              <img class="card-img projectPhotoOverlay" src="resources/images/black.jpg">
+              <img class="card-img" src="resources/images/planterboxes.jpg">
+              <div class="card-img-overlay">
+                <h5 class="card-title projectSplashTitle">Planter Boxes</h5>
+                <a href="planterBoxes.html" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
         </div>
-
-        <div class="row">
-          <div class="col align-self-start">
-            <p class="projectName">Autonomous Robot</p>
-          </div>
-          <div class="col align-self-start">
-            <p class="projectName">Water Pump</p>
-          </div>
-          <div class="col align-self-start">
-            <p class="projectName">Thermistor Cleaner</p>
-          </div>
-        </div>
-      
-
-        <div class="row">
-          <div class="col align-self-center">
-            <img class="img-fluid" src="resources/images/personalwebsite.JPG">
-          </div>
-          <div class="col align-self-center">
-            <img class="img-fluid" src="resources/images/miata.jpg">
-          </div>
-          <div class="col align-self-center">
-              <img class="img-fluid" src="resources/images/planterboxes.jpg">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col align-self-start">
-            <p class="projectName">Personal Website</p>
-          </div>
-          <div class="col align-self-start">
-            <p class="projectName">Miata Restoration</p>
-          </div>
-          <div class="col align-self-start">
-            <p class="projectName">Planter Boxes</p>
-          </div>
-        </div>
-
       </div>
+
+      <hr>
           
 
       <!--Skills and Experience Page-->
       <a name="experience"></a>
-      <div class="experienceHeading">
+      <div class="container">
         <h2 class="sectionHeading">SKILLS AND EXPERIENCE</h2>
         <p class="headingContent">Since I'm often diving in to try to learn new skills and trying to maintain my old ones, some of them are stronger than others. I always feel it's important to give a more-than-binary description of your talents, so check out mine below!</p>
-        <hr>
       </div>
 
-      <div class="employment">
-        <h4 class="topicHeading">EMPLOYMENT HISTORY</h4>
+        <div class="container">
+          <div class="card" style="background: rgb(24,49,79,.8)">
+              <h4 class="card-title text-center" style= "color: #f2f4f3">EMPLOYMENT HISTORY</h4>
+          </div>
+      
+            <div class="card" style="background: rgb(161,204,204,.6)">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title resumeHeading">Operations Engineer</h5>
+                  <p class="card-title resumeHeading">Appa Life Co.</p>
+                </div>
+                <div class="col">
+                  <h5 class="card-title resumeHeading text-right">Summer 2019</h5>
+                </div>
+              </div>
+              <p class="card-body">-Led conception and development of blockchain supply-chain tracking program<br>-Built and deployed company ecommerce website with WordPress and WooCommerce<br>-Oversaw organization of manufacturing facility and process, including choosing, ordering, and installing thousands of dollars of ULine equipment<br>-12+ hours a week operating manufacturing line and tending to 3 acre farm<br>-Miscellaneous customer relations, fundraising work, and graphic design</p>
+            </div>
+            
+            <div class="card" style="background: rgb(132,188,218,.6)">
+              <div class="row">
+                  <div class="col">
+                    <h4 class="card-title resumeHeading">Mechanical Engineering Intern</h4>
+                    <p class="card-title resumeHeading">NVIDIA</p>
+                  </div>
+                  <div class="col">
+                    <h4 class="card-title text-right resumeHeading">Summer 2018</h4>
+                  </div>
+              </div>
+              <p class="card-body">-Determined important mechanical design and material choices for a major unannounced product<br>-Performed extensive CAD with Creo utilizing DFM techniques and COMSOL FEA analysis<br>-Selected and negotiated with vendors for material acquisition and evaluation<br>-Coordinated with a team of electrical and mechanical engineers to ensure optimal integration</p>
+            </div>
 
-        <div class="row">
+            <div class="card" style="background: rgb(161,204,204,.6)">
+              <div class="row">
+                <div class="col">
+                  <h4 class="card-title resumeHeading">Camp Counselor</h4>
+                  <p class="card-title resumeHeading">Boy Scouts of America</p>
+                </div>
+                <div class="col">
+                  <h4 class="card-title text-right resumeHeading">Summer 2017</h4>
+                </div>
+              </div>
+              <p class="card-body">-Supervised Cub Scouts, ages 7-10, in day camp<br>-Guided Scouts through crafts, team sports, archery, and other activities for enjoyment and merit badge advancement</p>
+            </div>
+
+            <div class="card" style="background: rgb(132,188,218,.6)">
+              <div class="row">
+                <div class="col">
+                  <h4 class="card-title resumeHeading">Intern</h4>
+                  <p class="card-title resumeHeading">Skycatch, Inc.</p>
+                </div>
+                <div class="col">
+                  <h4 class="card-title text-right resumeHeading">Summer 2015</h4>
+                  </div>
+                </div>
+                <p class="card-body">-Only high school intern for this commercial drone data analytics and mapping company<br>-Processed image data into 3D models, wrote instruction manuals, and assisted commercial pilot training</p>
+            </div>
+        </div>
+
+      <div class="technical container">
+        <h4 class="sectionHeading">TECHNICAL SKILLS</h4>
+        <p class="headingContent">As engineers, there are a lot of tools and technical knowledge that we need in order to be productive and succesful. Below you can see the classes I've taken and skills I've developed, and those that I'm working toward.</p>
+        
+        <div class="row" style="padding-bottom: 1em">
           <div class="col">
-            <h4 class="resumeContent textOutline">Operations Engineer - Appa Life Co.</h4>
+              <div class="card" style="background: rgb(161,204,204,.6)">
+                  <h4 class="card-title text-center">Programming/Web Dev</h4>
+                  <div class="card" style="margin:.25em">
+                      <p class="card-title text-center">Fluent</p>
+                      <p class="card-body text-center">Python, MATLAB, HTML, CSS, Bootstrap</p>
+                  </div>
+                  <br>
+                  <div class="card" style="margin:.25em">
+                      <p class="card-title text-center">Capable</p>
+                      <p class="card-body text-center">C, Arduino, Git</p>
+                  </div>
+                  <br>
+                  <div class="card" style="margin:.25em">
+                      <p class="card-title text-center">Learning</p>
+                      <p class="card-body text-center">Java, JavaScript, React</p>
+                  </div>
+                  <br>
+              </div>
           </div>
           <div class="col">
-            <h4 class="resumeContent textOutline text-right">Summer 2019</h4>
+                  <div class="card" style="background: rgb(132,188,218,.6)">
+                      <h4 class="card-title text-center">Design and Production</h4>
+                      <div class="card" style="margin:.25em">
+                          <p class="card-title text-center">Fluent</p>
+                          <p class="card-body text-center">Creo Parametric, AutoCad, Fusion360</p>
+                      </div>
+                      <br>
+                      <div class="card" style="margin:.25em">
+                          <p class="card-title text-center">Capable</p>
+                          <p class="card-body text-center">Rapid Prototyping, Design for Manufacturing</p>
+                      </div>
+                      <br>
+                      <div class="card" style="margin:.25em">
+                          <p class="card-title text-center">Learning</p>
+                          <p class="card-body text-center"></p>
+                      </div>
+                      <br>
+                  </div>
           </div>
-        </div>
-        <p class="jobDescription">-Led conception and development of blockchain supply-chain tracking program<br>-Built and deployed company ecommerce website with WordPress and WooCommerce<br>-Oversaw organization of manufacturing facility and process, including choosing, ordering, and installing thousands of dollars of ULine equipment<br>-12+ hours a week operating manufacturing line and tending to 3 acre farm<br>-Miscellaneous customer relations, fundraising work, and graphic design</p>
 
-        <div class="row">
-            <div class="col">
-              <h4 class="resumeContent textOutline">Mechanical Engineering Intern - NVIDIA</h4>
-            </div>
-            <div class="col">
-              <h4 class="resumeContent textOutline text-right">Summer 2018</h4>
-            </div>
         </div>
-        <p class="jobDescription">-Determined important mechanical design and material choices for a major unannounced product<br>-Performed extensive CAD with Creo utilizing DFM techniques and COMSOL FEA analysis<br>-Selected and negotiated with vendors for material acquisition and evaluation<br>-Coordinated with a team of electrical and mechanical engineers to ensure optimal integration</p>
 
+        <br>
         <div class="row">
           <div class="col">
-            <h4 class="resumeContent textOutline">Camp Counselor - Boy Scouts of America</h4>
+            <div class="card" style="background: rgb(132,188,218,.6)">
+                <h4 class="card-title text-center">Software Tools</h4>
+                <div class="card" style="margin:.25em">
+                    <p class="card-title text-center">Fluent</p>
+                    <p class="card-body text-center">Microsoft Office, Adobe XD</p>
+                </div>
+                <br>
+                <div class="card" style="margin:.25em">
+                    <p class="card-title text-center">Capable</p>
+                    <p class="card-body text-center">Adobe Photoshop, Adobe Illustrator</p>
+                </div>
+                <br>
+                <div class="card" style="margin:.25em">
+                    <p class="card-title text-center">Learning</p>
+                    <p class="card-body text-center"></p>
+                </div>
+                <br>
+            </div>
           </div>
           <div class="col">
-            <h4 class="resumeContent textOutline text-right">Summer 2017</h4>
+                <div class="card" style="background: rgb(161,204,204,.6)">
+                    <h4 class="card-title text-center">Technical Courses</h4>
+                    <div class="card" style="margin:.25em">
+                      <p class="card-body">MATLAB, Thermodynamics, Statics, Dynamics, Mechanics of Materials, Mechanical Synthesis, Fluid Mechanics, Mechatronics, System Dynamics, Structural Mechanics, Heat Transfer</p>
+                    </div>
+                    <br>
+                </div>
           </div>
         </div>
-        <p class="jobDescription">Supervised Cub Scouts, ages 7-10, in day camp. Guided Scouts through crafts, team sports, archery, and other activities for enjoyment and merit badge advancement.</p>
 
-        <div class="row">
-            <div class="col">
-              <h4 class="resumeContent textOutline">Intern - Skycatch Inc.</h4>
-            </div>
-            <div class="col">
-              <h4 class="resumeContent textOutline text-right">Summer 2015</h4>
-            </div>
-        </div>
-        <p class="jobDescription">-Only high school intern for this commercial drone data analytics and mapping company<br>-Processed image data into 3D models, wrote instruction manuals, and assisted commercial pilot training</p>
-
-        <br><br><br><br>
       </div>
 
-      <div class="technical container-fluid">
-        <h4 class="topicHeading text-center">TECHNICAL SKILLS</h4>
-        <div>
-          <h4 class="resumeContent text-center textOutline">Fluent</h4>
-          <p class=" skills text-center">MATLAB, Creo Parametric, Python, AutoCAD, Fusion360, Microsoft Office, HTML5, CSS</p>
-          <h4 class="resumeContent text-center textOutline">Capable</h4>
-          <p class="skills text-center">ANSYS and COMSOL Sim Tools, Rapid Prototyping, DFM, Arduino, C, Bootstrap, Adobe CC (Illustrator, XD, Photoshop), WordPress, WooCommerce</p>
-          <h4 class="resumeContent text-center textOutline">Learning</h4>
-          <p class="skills text-center">Java, JavaScript, React, Git, Ruby</p>
-          <h4 class="resumeContent textOutline coursesHeading text-center">Technical Courses</h4>
-          <p class="skills text-center">MATLAB, Thermodynamics, Statics, Dynamics, Mechanics of Materials, Mechanical Synthesis, Fluid Mechanics, Mechatronics, System Dynamics, Structural Mechanics, Heat Transfer</p>
-        </div>
-      </div>
+      <hr>
 
       <div class="strengths">
-        <h4 class="topicHeading textCenter">STRENGTHS</h4>
+        <h4 class="sectionHeading" style="border-bottom-style: solid;border-color: #18314F;padding-bottom: 1.5em">STRENGTHS</h4>
         <div>
-          <h4 class="resumeContent textOutline">Analytical</h4>
-          <p class="bodyContent" style="text-align: left">I am an extremely strong analytical thinker in everything I do. I love to logically break down problems and attempt to optimally solve them.</p>
+          <h4 class="card-title">Analytical</h4>
+          <p class="card-body" style="text-align: left">I am an extremely strong analytical thinker in everything I do. I love to logically break down problems and attempt to optimally solve them.</p>
         </div>
         <div>
-          <h4 class="resumeContent textOutline">Organized</h4>
-          <p class="bodyContent" style="text-align: left">I am very organized in both my physical and virtual workspace and in my work process. I take great pride in carefully planning things out and executing them precisely.</p>
+          <h4 class="card-title">Organized</h4>
+          <p class="card-body" style="text-align: left">I am very organized in both my physical and virtual workspace and in my work process. I take great pride in carefully planning things out and executing them precisely.</p>
         </div>
         <div>
-          <h4 class="resumeContent textOutline">Hard Worker</h4>
-          <p class="bodyContent" style="text-align: left">I am a diligent and focused worker. I credit all my successes to my passion, drive, and work ethic far more than to any of my natural abilities.</p>
+          <h4 class="card-title">Hard Worker</h4>
+          <p class="card-body" style="text-align: left">I am a diligent and focused worker. I credit all my successes to my passion, drive, and work ethic far more than to any of my natural abilities.</p>
         </div>
         <div>
-          <h4 class="resumeContent textOutline">Strong Learner</h4>
-          <p class="bodyContent" style="text-align: left">I am not the fastest learner and do not possess a ton of skills. However, I love to learn and I learn well. It may take me longer than some to pick up a skill, but I learn it very thoroughly.</p>
+          <h4 class="card-title">Strong Learner</h4>
+          <p class="card-body" style="text-align: left">I am not the fastest learner and do not possess a ton of skills. However, I love to learn and I learn well. It may take me longer than some to pick up a skill, but I learn it very thoroughly.</p>
         </div>
       </div>
+
+      <hr>
 
       <div class="weaknesses">
-        <h4 class="topicHeading textCenter">WEAKNESSES</h4>
+        <h4 class="sectionHeading" style="border-bottom-style: solid;border-color: #18314F;padding-bottom: 1.5em">WEAKNESSES</h4>
         <div>
-          <h4 class="resumeContent textOutline">Limited Software Skills</h4>
-          <p class="bodyContent" style="text-align: left">In all honesty, I had no interest in software development until sometime during my sophomore year of college. As such, I never put in time to develop outside programming skills like a lot of my peers. My perspective has since changed, and this is something I'm working on rectifying by currently teaching myself Web Development and Java.</p>
+          <h4 class="card-title">Limited Software Skills</h4>
+          <p class="card-body" style="text-align: left">In all honesty, I had no interest in software development until sometime during my sophomore year of college. As such, I never put in time to develop outside programming skills like a lot of my peers. My perspective has since changed, and this is something I'm working on rectifying by currently teaching myself Web Development and Java.</p>
         </div>
         <div>
-          <h4 class="resumeContent textOutline">Limited Project Experience</h4>
-          <p class="bodyContent" style="text-align: left">Given my choice to pursue college athletics rather than research or a project team, I have limited practical experience on an engineering team. I hope that the leadership and teamwork intangibles that I've gained from playing sports along with my natural drive gives me a unique edge in this regard.</p>
+          <h4 class="card-title">Limited Project Experience</h4>
+          <p class="card-body" style="text-align: left">Given my choice to pursue college athletics rather than research or a project team, I have limited practical experience on an engineering team. I hope that the leadership and teamwork intangibles that I've gained from playing sports along with my natural drive gives me a unique edge in this regard.</p>
         </div>
         <div>
-          <h4 class="resumeContent textOutline">Aesthetically Challenged</h4>
-          <p class="bodyContent" style="text-align: left">As much as everyone wants to be an artist, I must admit that I am a pretty stereotypical engineer, and don't have much of an eye for graphic or UI design. Knowing how important this is to great product functionality and experience, I'm working on improving my creative side through projects like this website or some of the basic graphic design pieces featured on the site.</p>
+          <h4 class="card-title">Aesthetically Challenged</h4>
+          <p class="card-body" style="text-align: left">As much as everyone wants to be an artist, I must admit that I am a pretty stereotypical engineer, and don't have much of an eye for graphic or UI design. Knowing how important this is to great product functionality and experience, I'm working on improving my creative side through projects like this website or some of the basic graphic design pieces featured on the site.</p>
         </div>
       </div>
 
-      
+
+    </div>
 
       <!--Footer-->
+    <div class="container-fluid" style="background-color: #35373b">
       <a name="contact"></a>
       <div class="footer footerHeading">
-        <hr style="border-color: #e5f4e3">
-        <h2 class="sectionHeading">Contact Me</h2>
+        <h2>Contact Me</h2>
         <p class="footerContent">I'm always looking for exciting new people and opportunities.</p>
         <br>
         <a style="color: dodgerblue" class="footerContent" href="https://www.linkedin.com/in/connoryoung33/">LinkedIn</a>
         <p class="footerContent">connor@connoryoung.com</p>
       </div>  
-    
+    </div>
 
   </body>	  
 </html>
