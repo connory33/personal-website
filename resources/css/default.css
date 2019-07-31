@@ -44,7 +44,6 @@ a {
 
 /* Landing Page */
 .welcomeBanner {
-	/* styling */
 	color: #e5f4e3;
 	font-size: 3em;
 	font-style: bold;
@@ -236,19 +235,6 @@ a {
 
 /* Project Page */
 
-.projectPageGrid {
-	width: 100%;
-	background-image: linear-gradient(#a1cccc , #84bcda);
-	overflow: hidden;
-	display: grid;
-	grid-template-areas: "projectTitle projectTitle projectTitle"
-						"projectOverview projectOverview projectOverview"
-						"projectRole topLeftPhoto topRightPhoto"
-						"projectRole bottomLeftPhoto bottomRightPhoto"
-						"skillsGained skillsGained skillsGained";
-	grid-gap: 1em;
-}
-
 .pageHeading {
 	color: #e5f4e3;
 	font-size: 2em;
@@ -303,7 +289,8 @@ a {
 
 .containedImage {
 	overflow: hidden;
-	object-fit: contain;
+	object-fit: cover;
+	align-self: center;
 }
 
 .containedImage img {
