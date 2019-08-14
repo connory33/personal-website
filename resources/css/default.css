@@ -8,6 +8,11 @@ html {
 	height: 100%;
 }
 
+html , body {
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
 hr {
 	border-color: black;
 }
@@ -18,7 +23,7 @@ a {
 
 .parallaxBanner {
 	background-image: url(../images/enchantedlake.jpg);
-	height: 82%;
+	height: 85%;
 	width: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -44,101 +49,62 @@ a {
 
 /* Landing Page */
 .welcomeBanner {
+	/* styling */
 	color: #e5f4e3;
 	font-size: 3em;
-	font-style: bold;
+	font-weight: bold;
 }
 
 /* About Me Page */
 .sectionHeading {
 	color: #18314F;
 	padding: 1em;
-	font-size: 3em;
-	font-style: bold;
+	font-size: 2.4em;
+	font-weight: bold;
 	text-align: center;
 }
 
-.headingContent {
+.underline {
 	border-bottom-style: solid;
 	border-color: #18314F;
 	padding-bottom: 1.5em;
 }
 
+.dashedBorder {
+    border-style: dashed;
+}
+
 .aboutMeContent {
 	color: #18314F;
-	font-size: 1.6em;
+	font-size: 1.1em;
 	line-height: 1.5em;
 }
 
-.aboutPersonal {
-	padding-left: 2em;
-	padding-right: 2em;
+.boxedContent {
+    border-style: dashed;
+    background: white;
+    padding: .5em;
+    text-align: center;
 }
-
-.aboutProfessional {
-	padding-right: 2em;
-}
-/*
-.personalImageGrid {
-	grid-column: 1 / 6;
-	grid-row: 3;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	z-index: -1;
-}
-
-.mePic1 {
-	grid-column: 1;
-	grid-row: 1;
-	opacity: .35;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.mePic2 {
-	grid-column: 2;
-	grid-row: 1;
-	opacity: .35;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.mePic3 {
-	grid-column: 3;
-	grid-row: 1;
-	opacity: .35;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}*/
 
 /* Projects Page */
 
 .personalProjects {
-	padding: 2em;
-}
-
-.projectName {
-	color: #18314F;
-	text-align: center;
-	font-size: 1.7em;
-	padding-bottom: 2em;
+	padding: 1.7em;
 }
 
 .card-title {
-	padding: .5em;
-	font-size: 2.2em;
-	font-style: bold;
+	font-size: 1.8em;
+	font-weight: bold;
+	padding-left: .2em;
+	padding-right: .2em;
 }
 
 .card-body {
 	padding-left: .5em;
 	padding-right: .5em;
-	font-size: 1.4em;
-	line-height: 2em;
+	font-size: 1.1em;
+	line-height: 1.7em;
 }
 
 .projectSplashTitle {
@@ -155,17 +121,8 @@ a {
 
 /* Skills and Experience Page */
 
-.experienceHeading {
-	/* styling */
-	color: #18314F;
-	font-size: 2em;
-	font-style: bold;
-	/* position */
-	padding: 2em;
-}
-
 .employment {
-	padding: 1.5em;
+	padding: 1.2em;
 }
 
 .textOutline {
@@ -179,147 +136,98 @@ a {
 
 .jobDescription {
 	color: #18314f;
-	font-size: 1.6em;
-	line-height: 1.5em;
+	font-size: 1.3em;
+	line-height: 1.2em;
 }
 
 .resumeContent {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: #e5f4e3;
 }
 
 .resumeHeading {
 	color: #18314F;
-	font-size: 1.8em;
-	font-style: bold;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-left: .5em;
+	padding-right: .5em;
+	padding-top: .5em;
+}
+
+.resumeEmployer {
+    color: #18314F;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: .5em;
 }
 
 .technical {
 	margin: 1em;
-	padding: 1.5em;
+	padding: 1.2em;
 }
 
 .skills {
 	color: #18314f;
-	font-size: 1.6em;
-	line-height: 1.5em;
+	font-size: 1.3em;
+	line-height: 1.2em;
 }
 
 .strengths {
-	padding: 2em;
+	padding: 1.7em;
 }
 
 .weaknesses {
-	padding: 2em;
+	padding: 1.7em;
 }
 
 .footer {
-	color: #e5f4e3;
 	padding-top: 2em;
 	z-index: 1000;
+	text-align: center;
 }
 
 .footerHeading {
 	color: #e5f4e3;
-	font-size: 2em;
-	font-style: bold;
+	padding: 1em;
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: center;
 }
 
 .footerContent {
+	font-size: 1.5em;
 	text-align: center;
-	display: block;
-	margin: auto;
-	font-size: 1.1em;
-	color: #e5f4e3;
-}
-
-/* Project Page */
-
-.pageHeading {
-	color: #e5f4e3;
-	font-size: 2em;
-	font-style: bold;
-}
-
-.subheading {
-	color: #18314F;
-	font-size: 1.6em;
-	line-height: 1.5em;
-	justify-items: center;
-	align-items: center;
-}
-
-.projectTitle {
-	grid-area: projectTitle;
-	padding-left: 1em;
-}
-
-.projectOverview {
-	grid-area: projectOverview;
-	padding-left: .5em;
-}
-
-.projectRole {
-	grid-area: projectRole;
-	padding: .5em;
-}
-
-.skillsGained {
-	grid-area: skillsGained;
-	padding: .5em;
-}
-
-.topLeftPhoto {
-	grid-area: topLeftPhoto;
-}
-
-.topRightPhoto {
-	grid-area: topRightPhoto;
-	padding-right: .5em;
-}
-
-.bottomLeftPhoto {
-	grid-area: bottomLeftPhoto;
-}
-
-.bottomRightPhoto {
-	grid-area: bottomRightPhoto;
-	padding-right: .5em;
 }
 
 .containedImage {
 	overflow: hidden;
-	object-fit: cover;
-	align-self: center;
+	display: flex;
+	justify-content: center;
 }
 
 .containedImage img {
 	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 /* General classes */
 
 .bordered {
 	border-style: solid;
-	padding: auto;  
 	margin: auto;
 	width: 250px;
 }
 
 .headingContent {
 	color: #18314F;
-	line-height: 1.8em;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	text-align: center;
-}
-
-.subHeading {
-	color: #18314F;
-	font-size: 1.8em;
 }
 
 .bodyContent {
 	color: #E5F4E3;
-	font-size: 1.6em;
-	line-height: 1.5em;
+	font-size: 1.3em;
+	line-height: 1.2em;
 }
