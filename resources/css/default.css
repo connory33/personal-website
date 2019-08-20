@@ -83,8 +83,8 @@ a {
 .boxedContent {
     border-style: dashed;
     background: white;
-    padding: .5em;
-    text-align: center;
+	padding: .5em;
+	border-radius: .5em;
 }
 
 /* Projects Page */
