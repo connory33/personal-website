@@ -7,15 +7,15 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>Connor Young</title>
 
-    <!-- <link rel="stylesheet" type="text/css" href="resources/css/default.css"> -->
+    <link rel="stylesheet" type="text/css" href="../resources/css/default_v2.css">
 
     <!-- Bootstrap core CSS -->
-    <link href="resources/css/default_v2.css" rel="stylesheet">
+    <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="resources/css/album.css" rel="stylesheet">
+    <link href="../resources/css/album.css" rel="stylesheet">
   </head>
 
   <body>
@@ -26,7 +26,7 @@
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
               <h4 class="text-white">About Me</h4>
-              <p class="text-muted">
+              <p class="text-white">
                 My name is Connor Young and I'm from Palo Alto, CA. I have a BS in Mechanical Engineering and a minor in Business from Cornell University
                 and a Master's in Operations Research and Information Engineering from Cornell Tech. I'm a logical and quantitative-minded person that enjoys 
                 using data and engineering to solve complex problems and inform decision-making. I aim to pursue data science as a career, and am especially 
@@ -48,6 +48,7 @@
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <!-- <a href="../resources/images/Wheel1.jpg" width="20" height="20" class="mr-2"></a> -->
             <strong>CY</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,61 +60,55 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center" id="index-bg-img">
+      <section class="jumbotron text-center index-bg-img">
         <div class="container">
           <h1 class="jumbotron-heading">Connor Young</h1>
-          <p class="lead text-muted">Engineer, Sports Fan, Outdoor Enthusiast</p>
+          <p class="lead text-white">Engineer, Sports Fan, Outdoor Enthusiast</p>
           <p>
-            <a class="btn btn-primary my-2" href="resources/Young_Connor_Resume_Feb2021.pdf" download>Download Resume</a>
+            <a class="btn btn-primary my-2" href="../resources/Young_Connor_Resume_Apr2021.pdf" download>Download Resume</a>
           </p>
         </div>
       </section>
 
+
       <div class="album py-5 bg-light">
         <div class="container">
 
+          <!-- <h1 class="text-center">My Projects</h1>
+          <br><br> -->
+
           <div class="row">
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
               <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <h3 class="text-center text-muted">Coming Soon</h3>
+                </div>
                 <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href=#>Coming Soon</a></button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
+            
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="resources/images/nba_results.PNG" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
+                  <h3 class="text-center text-muted">NBA Fantasy Projection</h3>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="resources/images/madden_thumbnail.PNG" alt="Card image cap">
+                <img class="card-img-top height-cap" src="../resources/images/nba_results.PNG" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">This was a project that compared the efficacy of various machine learning models in predicting fantasy scores for NBA players.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="nbaFantasyProjections.html">Read More</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
                   </div>
                 </div>
               </div>
@@ -121,45 +116,68 @@
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="resources/images/personalwebsite.JPG" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h3 class="text-center text-muted">NFL Roster Optimizer</h3>
+                </div>
+                <img class="card-img-top height-cap" src="../resources/images/madden_thumbnail.PNG" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This was a fun exercise in roster optimization for different schemes using Madden ratings and Excel's evolutionary solver.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="maddenOptimizer.html">Read More</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <h3 class="text-center text-muted">Personal Website</h3>
+                </div>
+                <img class="card-img-top" src="../resources/images/personalwebsite.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a project that began in July 2019 as a joint portfolio-creation/learning experience.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="personalWebsite.html">Read More</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <h3 class="text-center text-muted">Autonomous Robot</h3>
+                </div>
+                <img class="card-img-top height-cap" src="../resources/images/robot.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This project used circuits, Arduino, and bit-level C code to build an autonomous robot for a cube-clearing competition.</p>
+                  <br>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="autonomousRobot.html">Read More</a></button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="resources/images/robot.JPG" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
+                  <h3 class="text-center text-muted">Miata Restoration</h3>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="resources/images/miata_front_right_topdown.jpg" alt="Card image cap">
+                <img class="card-img-top height-cap" src="../resources/images/miata_front_right_topdown.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">My father and I recently purchased and began a restoration of a 1995 M-Edition Miata.</p>
+                  <br>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="miataRestoration.html">Read More</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
                   </div>
                 </div>
               </div>
@@ -167,45 +185,49 @@
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="resources/images/therm_parts.JPG" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h3 class="text-center text-muted">Thermistor Cleaner</h3>
+                </div>
+                <img class="card-img-top height-cap" src="../resources/images/therm_parts.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This partner project tasked us with creating a physical product utilizing rapid prototyping techniques that could be used in commercial food service.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="thermistorCleaner.html">Read More</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="resources/images/WP1.jpeg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h3 class="text-center text-muted">Water Pump</h3>
+                </div>
+                <img class="card-img-top height-cap" src="../resources/images/WP1.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This group project entailed designing and fabricating a mechanical water pump capable of pumping 1 liter of water per minute.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="waterPump.html">Read More</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="resources/images/planterfinished.JPG" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h3 class="text-center text-muted">Planter Boxes</h3>
+                </div>
+                <img class="card-img-top height-cap" src="../resources/images/planterfinished.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This was my Eagle Scout Project for the Menlo Park VA Hospital. I oversaw 10+ other scouts in this role
+                    for 100+ man-hours.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="planterBoxes.html">Read More</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
                   </div>
                 </div>
               </div>
@@ -221,8 +243,7 @@
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+        <p>Copyright &copy; 2021 Connor Young</p>
       </div>
     </footer>
 
@@ -231,8 +252,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="js/vendor/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/vendor/holder.min.js"></script>
+    <script src="../js/vendor/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vendor/holder.min.js"></script>
   </body>
 </html>

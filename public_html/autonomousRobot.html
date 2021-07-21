@@ -62,24 +62,35 @@
 
       <div class="container-fluid" style="background:#f2f4f3">
         <div class="container">
-            <h4 class="sectionHeading underline">Planter Boxes</h4>
+            <h4 class="sectionHeading underline">Autonomous Robot</h4>
         </div>
         <div class="container">
           <br>
-            <p>I approached the Menlo Park VA because I knew I wanted my Eagle Project to benefit veterans. They told me that many of their residents love
-                 to garden, but are wheelchair-bound and have difficulty doing so. Thus, I designed and constructed three wheelchair-accessible planter boxes.</p>
-            <p>The boxes were constructed out of redwood with a plywood sheet bottom for added strength and cost savings. The inside was sealed with 
-                caulk and then covered in plastic sheet with a spigot attached for drainage. Finally, the boxes were mounted on wheels, sanded, and stained.</p>
-            <p>This was a really fun project and great learning experience for me. I got to help people I care about while also doing woodworking, something that 
-                I've enjoyed ever since building Pinewood Derby cars as a Cub Scout. In addition, I got to plan a project and oversee a large group of people 
-                to complete it over a several-month timespan. This was a really valuable experience for a good cause that I was glad to come by at such a young age.</p>
+          <p>
+            This robot was built for a 1v1 competition where it would be placed on a rectangular surface consisting of two halves painted blue and yellow.
+            Small plastic cubes were distributed throughout the board at the start of the game, and each robot started on the back edge of its half. The
+            goal is for the robot to move around and push the blocks to the other half, as the one with the least blocks on its side at the end of a 30
+            second period wins.
+        </p>
+        <p>
+            In order to accomplish this, we had to come up with the optimal battle strategy and then build and program the robot to reliably execute it.
+            To allow the robot to gather the necessary information and move as required, we integrated a color sensor so that it could detect its location
+            and region edges and constructed two H-bridge circuits to allow for independent wheel control and pulse width modulation. We programmed the
+            strategy using Arduino and C with bits, registers, etc.
+        </p>
+        <p>
+            In addition to the electrical and coding work, we also made some mechanical improvements to aid the robot. We used a piece of scrap plastic to
+            fashion a snowplow attachment to increase the cube-clearing area and laser-cut acrylic to form a housing that would protect the circuits and
+            add mass in case of any collisions with other robots.
+        </p> 
+          <br>
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-5 containedImage">
-                    <img src="../resources/images/planter4.JPG">
+                    <img src="../resources/images/robot.jpg">
                 </div>
                 <div class="col-5 containedImage">
-                    <img src="../resources/images/plantercaulk.png">
+                    <img src="../resources/images/robot1.jpg">
                 </div>
                 <div class="col-1"></div>
             </div>
@@ -87,16 +98,18 @@
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-5 containedImage">
-                    <img src="../resources/images/planterplastic.png">
+                    <img src="../resources/images/robot3.jpg">
                 </div>
                 <div class="col-5 containedImage">
-                    <img src="../resources/images/planterfinished.JPG">
+                    <img src="../resources/images/robot4.jpg">
                 </div>
                 <div class="col-1"></div>
             </div>
+            <br>
         </div>
         <br><br>
     </div>
+
 
     </main>
 
@@ -120,3 +133,4 @@
     <script src="../js/vendor/holder.min.js"></script>
   </body>
 </html>
+
